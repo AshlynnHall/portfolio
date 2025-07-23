@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Ashlynn Hall</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon" id="menu-icon">
+                ☰ <!-- Hamburger Icon -->
+            </div>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact Me</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/email.png" alt="Email"></a>
+                <a href="#"><img src="images/github.png" alt="GitHub"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h1>Contact Me</h1>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>I'd love to hear from you! Whether you have a project in mind, want to collaborate, or just want to say hello, feel free to reach out.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <img src="images/email.png" alt="Email">
+                            <span>your.email@example.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <img src="images/linkedin.png" alt="LinkedIn">
+                            <span>LinkedIn Profile</span>
+                        </div>
+                        <div class="contact-method">
+                            <img src="images/github.png" alt="GitHub">
+                            <span>GitHub Profile</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>Send a Message</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Ashlynn Hall. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/about">About Me</a>
+                <a href="/projects">Projects</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="footer-social-icons">
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/email.png" alt="Email"></a>
+                <a href="#"><img src="images/github.png" alt="GitHub"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/hamburger-menu.js"></script>
+</body>
+</html>

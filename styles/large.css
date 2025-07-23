@@ -1,0 +1,5 @@
+@media screen and (min-width: 769px) {
+    .menu-icon {
+        display: none; /* Hide hamburger menu on larger screens */
+    }
+}
