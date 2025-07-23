@@ -98,6 +98,157 @@ main {
     border-radius: 10%;
 }
 
+/* Content Row */
+.content-row {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.content-row .work-experience {
+    flex: 1;
+    margin: 0;
+}
+
+.content-row .weather-widget {
+    flex: 0 0 450px;
+}
+
+/* Weather Widget */
+.weather-widget {
+    background: linear-gradient(135deg, #4a5759 0%, #3a4749 100%);
+    border-radius: 0;
+    padding: 30px;
+    color: #dedbd2;
+    box-shadow: 0 8px 25px rgba(74, 87, 89, 0.3);
+    margin: 0;
+    max-width: 450px; 
+    min-height: 300px; 
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weather-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.weather-content h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #dedbd2;
+    text-align: center;
+}
+
+.weather-main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.weather-main span {
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+.weather-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #dedbd2;
+}
+
+.weather-location {
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    color: #dedbd2;
+}
+
+.weather-main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.weather-temp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather-icon {
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.temperature {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color: #dedbd2;
+}
+
+.weather-desc {
+    margin: 15px 0 0 0;
+    text-align: center;
+}
+
+.weather-desc-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.weather-desc-item span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #dedbd2;
+}
+
+.weather-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    color: #dedbd2;
+}
+
+.weather-stats span {
+    display: block;
+}
+
+.weather-error {
+    text-align: center;
+    padding: 20px;
+    background: red;
+    border-radius: 10px;
+    color: #dedbd2;
+}
+
+.weather-error h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+    color: #dedbd2;
+}
+
+.weather-error p {
+    margin: 0;
+    opacity: 0.9;
+    color: #dedbd2;
+}
+
 /* Work Experience Section */
 .work-experience {
     background-color: #4a5a5b;
@@ -107,6 +258,47 @@ main {
 
 .work-experience h2 {
     font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.job {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(222, 219, 210, 0.2);
+}
+
+.job:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.job h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    color: #dedbd2;
+}
+
+.job h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    color: #b8b5ac;
+    font-style: italic;
+}
+
+.job-duration {
+    font-size: 14px;
+    margin: 0 0 3px 0;
+    color: #dedbd2;
+    font-weight: 500;
+}
+
+.job-location {
+    font-size: 14px;
+    margin: 0;
+    color: #a09d94;
 }
 
 footer {
@@ -159,4 +351,42 @@ footer {
 
 footer p {
     font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .weather-widget {
+        max-width: 100%;
+        margin: 15px 0;
+        padding: 15px;
+    }
+    
+    .weather-main {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .temperature {
+        font-size: 2rem;
+    }
+    
+    .weather-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .content-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .content-row .weather-widget {
+        flex: 1;
+        order: 2;
+    }
+    
+    .content-row .work-experience {
+        order: 1; 
+    }
 }

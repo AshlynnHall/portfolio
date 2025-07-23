@@ -48,10 +48,50 @@
                 <img src="images/headshot.jpg" alt="Ashlynn Hall Headshot">
             </div>
         </section>
-        <section class="work-experience">
-            <h2>Work Experience</h2>
-            <p>More placeholder text about experience.</p>
-        </section>
+        <div class="content-row">
+            <section class="work-experience">
+                <h2>Work Experience</h2>
+                
+                <div class="job">
+                    <h3>Epic Games</h3>
+                    <h4>App Portfolio Management Intern</h4>
+                    <p class="job-duration">May 2025 - Current</p>
+                    <p class="job-location">Cary, NC Remote</p>
+                </div>
+
+                <div class="job">
+                    <h3>BYU-Idaho Information Technology Department</h3>
+                    <h4>Process and Documentation Team Lead</h4>
+                    <p class="job-duration">September 2021 – December 2023</p>
+                    <p class="job-location">Rexburg, ID</p>
+                </div>
+
+                <div class="job">
+                    <h3>Art Bridges Foundation</h3>
+                    <h4>Web and Digital Operations Intern</h4>
+                    <p class="job-duration">June 2023 – August 2023</p>
+                    <p class="job-location">Bentonville, AR</p>
+                </div>
+
+                <div class="job">
+                    <h3>The Church of Jesus Christ of Latter-Day Saints</h3>
+                    <h4>Volunteer Full-Time Missionary</h4>
+                    <p class="job-duration">January 2020 – June 2021</p>
+                    <p class="job-location">Roseville, CA</p>
+                </div>
+            </section>
+            <div id="weather-widget" class="weather-widget">
+                <div class="weather-content">
+                    <h3>Spring, TX Weather</h3>
+                    <div class="weather-main">
+                        <span>Current: <span id="temperature"></span>°F</span>
+                        <span>High: <span id="alert-temp"></span>°F</span>
+                        <span>Humidity: <span id="humidity"></span>%</span>
+                    </div>
+                    <div id="weather-desc" class="weather-desc"></div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-content">
@@ -70,5 +110,6 @@
         </div>
     </footer>
     <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
