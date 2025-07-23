@@ -355,6 +355,34 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Intro section mobile styles */
+    .intro {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .intro h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .intro p {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    
+    .intro img {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+    
+    .intro-left, .intro-right {
+        flex: none;
+    }
+    
+    /* Weather widget mobile styles */
     .weather-widget {
         max-width: 100%;
         margin: 15px 0;
@@ -376,6 +404,7 @@ footer p {
         height: 50px;
     }
 
+    /* Content row mobile styles */
     .content-row {
         flex-direction: column;
         gap: 0;

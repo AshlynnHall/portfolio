@@ -1,16 +1,17 @@
 @media screen and (max-width: 768px) {
     .nav-links {
-        display: none; /* Hide navigation by default */
+        display: none; 
         flex-direction: column;
         background-color: #4a5a5b;
         position: absolute;
         top: 50px;
-        right: 0;
+        left: 0;
         width: 200px;
         padding: 10px;
+        z-index: 1000; 
     }
 
     .nav-links.open {
-        display: flex; /* Show navigation when open */
+        display: flex; 
     }
 }
