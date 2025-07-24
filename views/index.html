@@ -81,7 +81,10 @@
                 </div>
             </section>
             <div id="weather-widget" class="weather-widget">
-                <div class="weather-content">
+                <div class="weather-loading">
+                    <span>Loading Spring, TX weather...</span>
+                </div>
+                <div class="weather-content" style="display: none;">
                     <h3>Spring, TX Weather</h3>
                     <div class="weather-main">
                         <span>Current: <span id="temperature"></span>°F</span>
@@ -89,6 +92,11 @@
                         <span>Humidity: <span id="humidity"></span>%</span>
                     </div>
                     <div id="weather-desc" class="weather-desc"></div>
+                </div>
+                <div class="weather-error" style="display: none;">
+                    <h3>Weather Unavailable</h3>
+                    <p>Unable to load weather data.</p>
+                    <button class="retry-btn">Try Again</button>
                 </div>
             </div>
         </div>
